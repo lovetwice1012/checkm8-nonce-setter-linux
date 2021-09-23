@@ -171,7 +171,7 @@ echo "Please connect device in DFU mode. Press enter when ready to continue"
 read randomIrrelevant
 
 if [ $device == iPhone10,3 ] || [ $device == iPhone10,6 ]; then
-    git clone https://github.com/MatthewPierson/ipwndfuA11
+    git clone https://github.com/nyuszika7h/ipwndfuA11
     cd ipwndfuA11
 else
     git clone https://github.com/MatthewPierson/ipwndfu_public.git
