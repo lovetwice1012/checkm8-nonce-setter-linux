@@ -179,16 +179,6 @@ else
 fi
 echo "Starting ipwndfu"
 
-pwned=0
-until [ $pwned = 1 ];
-do
-    echo "Waiting 10 seconds to allow you to enter DFU mode"
-    sleep 10
-    echo "Attempting to get into pwndfu mode"
-    echo "Please just enter DFU mode again on each reboot"
-    echo "The script will run ipwndfu again and again until the device is in PWNDFU mode"
-    ./ipwndfu -p && pwned=1
-done
 
 sleep 3
 
